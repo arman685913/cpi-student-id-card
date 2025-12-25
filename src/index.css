@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  #card1, #card1 * {
+    visibility: visible; 
+  }
+
+  #card1 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  button {
+    display: none; 
+  }
+
+  .bglue {
+    background-color: rgb(37, 99, 235) !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
