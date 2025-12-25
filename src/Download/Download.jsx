@@ -55,8 +55,8 @@ const Download = () => {
     };
 
     return (
-        <div className='pt-15 md:pt-24 lg:pt-32 pb-5 md:pb-8 lg:pb-10 bg-sky-100'>
-            <div id="card1" className=" bg-white py-4 flex flex-col items-center gap-6 mb-5 md:mb-8 lg:mb-10">
+        <div className='pt-15 md:pt-24 lg:pt-32 pb-5 md:pb-8 lg:pb-10 bg-sky-100 dark:bg-black dark:border-b'>
+            <div id="card1" className=" bg-white dark:bg-black py-4 flex flex-col items-center gap-6 mb-5 md:mb-8 lg:mb-10">
 
                 {/* FRONT SIDE */}
                 <div className="w-[243px] h-[153px] border bg-white shadow-sm overflow-hidden text-[10px] relative">
@@ -76,14 +76,14 @@ const Download = () => {
                     {/* Body */}
                     <div className="px-3 pt-1">
                         <div className="text-center mb-1">
-                            <span className="inline-block border border-gray-400 px-2 py-[1px] rounded-full text-[10px] font-medium">
+                            <span className="inline-block border border-gray-400 px-2 py-[1px] rounded-full text-[10px] font-medium dark:text-black">
                                 Identity Card
                             </span>
                         </div>
 
                         <div className="flex gap-2 justify-center mr-2 font-medium">
                             {/* Photo */}
-                            <div className="w-[48px] h-[55px] mt-1 border rounded overflow-hidden flex items-center justify-center">
+                            <div className="w-[48px] h-[55px] mt-1 border dark:border-black rounded overflow-hidden flex items-center justify-center">
                                 {imageUrl ? (
                                     <img src={imageUrl} alt="Student" className="w-full h-full object-cover " />
                                 ) : (
@@ -92,7 +92,7 @@ const Download = () => {
                             </div>
 
                             {/* Info */}
-                            <div className="leading-3.5">
+                            <div className="leading-3.5 dark:text-black">
                                 <p className=" text-">Name: {name}</p>
                                 <p>Department: {department}</p>
                                 <p>Roll: {roll}</p>
@@ -105,7 +105,7 @@ const Download = () => {
                         </div>
 
                         {/* Signature */}
-                        <div className="flex justify-between mt-3 px-1 italic text-[9px]">
+                        <div className="flex justify-between mt-3 px-1 italic text-[9px] dark:text-black">
                             <span>Principal</span>
                             <span>Student</span>
                         </div>
@@ -114,7 +114,7 @@ const Download = () => {
                 </div>
 
                 {/* BACK SIDE */}
-                <div className="relative border w-[243px] h-[153px] bg-white shadow-sm px-3 py-1 text-[10px] overflow-hidden ">
+                <div className="relative border w-[243px] h-[153px] bg-white shadow-sm px-3 py-1 dark:text-black text-[10px] overflow-hidden ">
 
                     <div className='absolute top-7 opacity-10 right-20'>
                         <img className=' w-[90px]' src={logo} alt="" />

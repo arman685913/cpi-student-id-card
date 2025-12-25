@@ -27,7 +27,7 @@ const Login = () => {
     return (
         <div className="lg:my-36 md:my-24 my-16 flex items-center justify-center">
             <fieldset className="relative fieldset p-6 border-base-300 rounded-box w-80 border bg-white shadow-lg">
-                <legend className="fieldset-legend text-2xl">Login</legend>
+                <legend className="fieldset-legend text-2xl dark:text-blue-600 font-bold">Login</legend>
 
                 <label className="label">Admin Name</label>
                 <input
