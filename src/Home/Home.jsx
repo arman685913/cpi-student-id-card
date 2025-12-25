@@ -38,7 +38,7 @@ const Home = () => {
     const labelStyle = "block text-sm font-medium mb-1";
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-blue-50 to-cyan-100 py-8 px-4">
+        <div className=" bg-gradient-to-br from-blue-50 to-cyan-100 py-8 px-4">
             <div className="max-w-6xl mx-auto bg-white shadow-xl rounded-xl p-6 md:p-10">
                 <h2 className="text-center text-xl md:text-2xl font-bold text-blue-600 mb-8">
                     Student ID Card Information
@@ -169,7 +169,7 @@ const Home = () => {
 
                             <div>
                                 <label className={labelStyle}>Date of Birth</label>
-                                <input name="dob" type="date" required className={inputStyle} />
+                                <input name="dob" type="date" required className={inputStyle} placeholder='Enter your date of birth '/>
                             </div>
                         </div>
                     </section>

@@ -136,7 +136,7 @@ const Download = () => {
                             <p>{village},</p>
                             <p>P.O: {post}</p>
                         </div>
-                        <p>Upazila: {subDistrict}</p>
+                        <p>Sub-district: {subDistrict}</p>
                         <p>District: {district}</p>
                         <p>Phone: {phone}</p>
                     </div>
